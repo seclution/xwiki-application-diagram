@@ -148,7 +148,7 @@ var mxLoadResources = false;
 var mxGraphViewerBasePath = "$services.webjars.url('org.xwiki.contrib:mxgraph-editor', '')";
 
 // Diagram Viewer Configuration
-var diagramViewerBasePath = "$services.webjars.url('org.xwiki.contrib:draw.io', '')";
+var diagramViewerBasePath = "$services.webjars.url('de.seclution.xwiki:drawio-webjar', '')";
 var STENCIL_PATH = diagramViewerBasePath + 'stencils';
 var IMAGE_PATH = diagramViewerBasePath + 'images';
 var STYLE_PATH = CSS_PATH = diagramViewerBasePath + 'styles';

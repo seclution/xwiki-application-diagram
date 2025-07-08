@@ -89,9 +89,9 @@
       <artifactId>jquery</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.xwiki.contrib</groupId>
-      <artifactId>draw.io</artifactId>
-      <version>6.5.7</version>
+      <groupId>de.seclution.xwiki</groupId>
+      <artifactId>drawio-webjar</artifactId>
+      <version>22.0.3</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>

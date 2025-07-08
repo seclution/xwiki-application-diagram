@@ -141,7 +141,7 @@ var mxLanguage = '$xcontext.locale';
 var mxGraphEditorBasePath = "$services.webjars.url('org.xwiki.contrib:mxgraph-editor', '')";
 
 // Diagram Editor Configuration
-var diagramEditorBasePath = "$services.webjars.url('org.xwiki.contrib:draw.io', '')";
+var diagramEditorBasePath = "$services.webjars.url('de.seclution.xwiki:drawio-webjar', '')";
 var RESOURCES_PATH = diagramEditorBasePath + 'resources';
 // Comment out the following line when using the basic mxGraph Editor.
 var RESOURCE_BASE = RESOURCES_PATH + '/dia';
