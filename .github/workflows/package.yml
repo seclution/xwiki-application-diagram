@@ -1,0 +1,28 @@
+name: Package XAR
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '11'
+      - name: Build XAR
+        run: mvn -B package
+      - name: Zip XAR
+        run: |
+          VERSION=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          zip -j application-diagram-${VERSION}.zip target/application-diagram-${VERSION}.xar
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: application-diagram-xar
+          path: application-diagram-*.zip

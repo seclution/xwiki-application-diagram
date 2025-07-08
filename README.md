@@ -15,3 +15,14 @@ This is a simple application created using [AppWithinMinutes](http://extensions.
 * Translations: N/A
 * Sonar Dashboard: N/A
 * Continuous Integration Status: [![Build Status](https://ci.xwiki.org/job/XWiki%20Contrib/job/application-diagram/job/master/badge/icon)](https://ci.xwiki.org/view/Contrib/job/XWiki%20Contrib/job/application-diagram/job/master/)
+
+## Building
+
+Run the following command from the project root to generate the `.xar` package:
+
+```bash
+mvn package
+```
+
+The resulting file will be located under `target/` as `application-diagram-<version>.xar`.
+You can also trigger the `Package XAR` GitHub workflow to build and archive this file automatically.
